@@ -8,8 +8,8 @@ public class Mision {
     private String destino;
     private Nave nave;
 
-    public Mision(int anioLanzamiento, Astronauta astronauta,
-            String codigo, String destino, Nave nave) {
+    public Mision(int anioLanzamiento, Astronauta astronauta, String codigo,
+            String destino, Nave nave) {
         this.anioLanzamiento = anioLanzamiento;
         this.astronauta = astronauta;
         this.codigo = codigo;
@@ -39,8 +39,7 @@ public class Mision {
 
     @Override
     public String toString() {
-        return "Misión [" + codigo + "]: destino " + destino
-                + " (" + anioLanzamiento + ")\n"
+        return "Misión [" + codigo + "]: destino " + destino + " (" + anioLanzamiento + ")\n"
                 + "  -> Comandante: " + astronauta.toString() + "\n"
                 + "  -> " + nave.toString();
     }

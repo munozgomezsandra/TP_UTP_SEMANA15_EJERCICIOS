@@ -2,18 +2,18 @@ package Modelo;
 
 public class Nave {
 
-    private int capacidad;
+    private int capacidadTripulantes;
     private String modelo;
     private String nombreNave;
 
-    public Nave(int capacidad, String modelo, String nombreNave) {
-        this.capacidad = capacidad;
+    public Nave(int capacidadTripulantes, String modelo, String nombreNave) {
+        this.capacidadTripulantes = capacidadTripulantes;
         this.modelo = modelo;
         this.nombreNave = nombreNave;
     }
 
-    public int getCapacidad() {
-        return capacidad;
+    public int getCapacidadTripulantes() {
+        return capacidadTripulantes;
     }
 
     public String getModelo() {
@@ -27,6 +27,6 @@ public class Nave {
     @Override
     public String toString() {
         return "Nave: " + nombreNave + " (modelo " + modelo + ") - "
-                + capacidad + " tripulantes";
+                + capacidadTripulantes + " tripulantes";
     }
 }
